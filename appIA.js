@@ -36,7 +36,7 @@ formRegistro.addEventListener("submit",(e) => {
         let nuevoUsuario = new Usuario (userLogin, passwordLogin, ageLogin); 
         
         usuarios.push(nuevoUsuario)
-        alert(`Estás registrado ${nuevoUsuario} ya podés empezar a comprar`)
+        alert(`Estás registrado ${nuevoUsuario} ya podés loguearte`)
     } 
 
 
