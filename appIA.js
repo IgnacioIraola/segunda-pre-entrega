@@ -32,7 +32,7 @@ formRegistro.addEventListener("submit",(e) => {
         alert(`sos menor de edad no podés ingresar`)
         console.log("menor de edad")
     
-    }else(userLogin && passwordLogin && ageLogin);{
+    }else(userLogin && passwordLogin && ageLogin >=18);{
         let nuevoUsuario = new Usuario (userLogin, passwordLogin, ageLogin); 
         
         usuarios.push(nuevoUsuario)
