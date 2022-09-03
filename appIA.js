@@ -1,4 +1,4 @@
-let formulario = document.getElementById("loguin");
+let formulario = document.getElementById("login");
 let formRegistro = document.getElementById("registro");
 let ingresoError = document.getElementById("Error");
 let menorEdad = document.getElementById("menoredad");
@@ -32,7 +32,7 @@ formRegistro.addEventListener("submit",(e) => {
         alert(`sos menor de edad no podés ingresar`)
         console.log("menor de edad")
     
-    }else(userLogin && passwordLogin && ageLogin >=18);{
+    }else if(userLogin && passwordLogin && ageLogin >=18){
         let nuevoUsuario = new Usuario (userLogin, passwordLogin, ageLogin); 
         
         usuarios.push(nuevoUsuario)
