@@ -53,7 +53,7 @@ formulario.addEventListener("submit", (e) =>{
         if(user.user == userLogin && user.password == passwordLogin){
             alert("Bienvenido")
             window.location.href ="index.html"
-            localStorage,setItem("usurio",user.user);
+            localStorage.setItem("usuario",user.user);
         }else if ((user.user =! userLogin) && (user.password =! passwordLogin) || (user.user =! userLogin) || (user.password =! passwordLogin)){
             resultado.innerHTML =`<p>Acceso denegado, datos incorrectos</p>`
         }
