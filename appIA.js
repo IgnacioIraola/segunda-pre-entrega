@@ -51,10 +51,11 @@ formulario.addEventListener("submit", (e) =>{
     
     for(let user of usuarios){
         if(user.user == userLogin && user.password == passwordLogin){
-            alert("Bienvenido")
+            alert("Bienvenido");
             window.location.href ="index.html"
             localStorage.setItem("usuario",user.user);
-        }else if ((user.user =! userLogin) && (user.password =! passwordLogin) || (user.user =! userLogin) || (user.password =! passwordLogin)){
+        }else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
+        (user.user =! userLogin) || (user.password =! passwordLogin)){
             resultado.innerHTML =`<p>Acceso denegado, datos incorrectos</p>`
         }
 
