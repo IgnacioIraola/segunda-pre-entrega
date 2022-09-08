@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <title>Comprá tus bebidas espirituosas</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+
 <body>
-    
-    
+    <h1>Bienvenido a nuestro carrito de bebidas! </h1>
+    <h2>Registrate para empezar a comprar</h2>
+    <form id="registro">
+        <label for="nombre">Usuario</label>
+        <input type="text" id="userRegister">
+        <br>
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" id="passRegister">
+        <br>
+        <br>
+        <label for="Edad">Edad</label>
+        <input type="number" id="edadRegister">
+        <br>
+        <br>
+        <button type="submit" id="registrar">Ingresar</button>
+    </form>
 
 
-<h3>Ingrese los datos de las bebidas deseadas</h3>
+    <h2>Ingresá si ya estás registrado</h2>
+    <form id="login">
+        <label for="nombre">Usuario</label>
+        <input type="text" id="user">
+        <br>
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <button type="submit" id="ingresar">Ingresar</button>
+    </form>
 
+    <div id="error"></div>
 
-        <form action="" id="form" style="display: flexbox;">
-            <label for="">Bebida</label>
-            <input type="text" name="bebida" id="bebida">
-            <br>
-            <br>
-            <label for="">Precio</label>
-            <input type="number" name="precio" id="precio">
-            <br>
-            <br>
-            <button type="submit" id="btnSubmit">Agregar Bebidas al carrito</button>
+    <div id="menoredad"></div>
 
-            <button type="button" id="btnMostrar">Ver contenido carrito</button>
-        </form>
- 
-        <div id="mostrarProdSolos"></div>
-        <div id="mostrarTodosProd"></div>
-
-
-    <script src="app.js"></script>
+    <script src="main.js"></script>
+     
 </body>
+
 </html>
