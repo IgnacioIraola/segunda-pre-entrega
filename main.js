@@ -45,9 +45,6 @@ formRegistro.addEventListener("submit",(e) => {
         }
 
     }
-    
-        
-
 })
 
 
@@ -58,14 +55,24 @@ formulario.addEventListener("submit", (e) =>{
     let passwordLogin = document.getElementById("pass").value;
     
     
-    
-    if(user.user == userLogin && user.password == passwordLogin){
+    /*if(user.user == userLogin && user.password == passwordLogin){
         alert("Bienvenido");
         window.location.href ="carrito.html"
         localStorage.setItem("usuario",user.user);
     }else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
         (user.user =! userLogin) || (user.password =! passwordLogin)){
             resultado.innerHTML =`<p>Acceso denegado, datos incorrectos</p>`
+    }*/
+
+    for (let user of usuarios) {
+        if (user.user == userLogin && user.password == passwordLogin ) {
+              swal("Bienvenido a nuestro carrito de bebidas");
+              window.location.href = "carrito.html"
+              localStorage.setItem("usuario", user.user);
+        } else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
+        (user.user =! userLogin) || (user.password =! passwordLogin) ) {
+            resultado.innerHTML = `<p> Acceso incorrecto, revise su usuario o contraseña</p>`
+        }
     }
 
     
