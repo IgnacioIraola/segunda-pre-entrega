@@ -64,7 +64,7 @@ formulario.addEventListener("submit", (e) =>{
               localStorage.setItem("usuario", user.user);
         } else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
         (user.user =! userLogin) || (user.password =! passwordLogin) ) {
-            resultado.innerHTML = `<p> Acceso incorrecto, revise su usuario o contraseña</p>`
+            resultado.innerHTML = `<p> Datos erróneos</p>`
         }
     }
 
