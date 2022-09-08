@@ -61,7 +61,7 @@ formulario.addEventListener("submit", (e) =>{
     
     if(user.user == userLogin && user.password == passwordLogin){
         alert("Bienvenido");
-        window.location.href ="index.html"
+        window.location.href ="carrito.html"
         localStorage.setItem("usuario",user.user);
     }else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
         (user.user =! userLogin) || (user.password =! passwordLogin)){
