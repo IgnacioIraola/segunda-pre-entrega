@@ -40,7 +40,7 @@ function validarDatos() {
     console.log(precio)
 
     if(bebida == '' || precio == ''){
-        alert("Se debe completar todos los campos para continuar")
+        swal("Se debe completar todos los campos para continuar")
         inputBebida.focus()
         validacion = false;
          
@@ -72,7 +72,7 @@ function agregarProd(e){
 
 
         }else{
-            alert("No se agregó el producto")
+            swal("No se agregó el producto")
         }
         
         } else{

@@ -1,7 +1,8 @@
 let formulario = document.getElementById("login");
 let formRegistro = document.getElementById("registro");
 let edad = document.getElementById("edad");
-//let ingresoError = document.getElementById("error");
+let errorRegistro =  document.getElementById("error");
+errorRegistro.style.color ='red';
 
 // constructor
 
@@ -53,9 +54,6 @@ formulario.addEventListener("submit", (e) =>{
     e.preventDefault();
     let userLogin = document.getElementById("user").value;
     let passwordLogin = document.getElementById("pass").value;
-    
-    
-    
 
     for (let user of usuarios) {
         if (user.user == userLogin && user.password == passwordLogin ) {
@@ -64,7 +62,7 @@ formulario.addEventListener("submit", (e) =>{
               localStorage.setItem("usuario", user.user);
         } else if ((user.user =! userLogin) && (user.password =! passwordLogin) || 
         (user.user =! userLogin) || (user.password =! passwordLogin) ) {
-            resultado.innerHTML = `<p> Datos erróneos</p>`
+            errorRegistro.innerHTML = `<p> Datos Erróneos</p>`
         }
     }
 
